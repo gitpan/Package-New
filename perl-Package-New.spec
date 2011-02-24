@@ -1,8 +1,8 @@
 Name:           perl-Package-New
-Version:        0.04
-Release:        2%{?dist}
+Version:        0.05
+Release:        1%{?dist}
 Summary:        Simple base package from which to inherit
-License:        Distributable, see LICENSE
+License:        BSD
 Group:          Development/Libraries
 URL:            http://search.cpan.org/dist/Package-New/
 Source0:        http://www.cpan.org/modules/by-module/Package/Package-New-%{version}.tar.gz

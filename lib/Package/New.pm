@@ -2,7 +2,7 @@ package Package::New;
 use strict;
 use warnings;
 
-our $VERSION='0.04';
+our $VERSION='0.05';
 
 =head1 NAME
 
@@ -38,7 +38,7 @@ I recommend to always use strict, warnings and our version.
 
 =head2 Lazy Load where you can
 
-I recommend Lay Loading where you can.
+I recommend Lazy Loading where you can.
 
   sub mymethod {
     my $self=shift;
@@ -48,7 +48,7 @@ I recommend Lay Loading where you can.
 
 =head1 DESCRIPTION
 
-The Package::New object provides a consistent object constructor for objects.
+The Package::New object provides a consistent constructor for objects.
 
 =head1 USAGE
 
@@ -109,11 +109,11 @@ The full text of the license can be found in the LICENSE file included with this
 
 L<base>, L<parent>
 
-=head2 Light Weight Base Objects - Similar to this package
+=head2 Other Light Weight Base Objects Similar to Package::New
 
 L<Package::Base>, L<Class::Base>
 
-=head2 Heavy Base Objects - Drink the Water
+=head2 Heavy Base Objects - Drink the Kool-Aid
 
 L<Moose>, L<Class::Accessor>, L<Class::MethodMaker>, L<Class::MethodMaker>, L<Class::Meta>
 

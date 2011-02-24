@@ -3,11 +3,11 @@ use base qw{Package::New};
 use strict;
 use warnings;
 
-our $VERSION='0.04';
+our $VERSION='0.05';
 
 =head1 NAME
 
-Package::New - Simple base package from which to inherit
+Package::New::Dump - Simple base package from which to inherit
 
 =head1 SYNOPSIS
 

@@ -1,5 +1,7 @@
 Revision history for Perl module Package::New
 
+0.05 2011-02-23
+  - Fixed issue with pod NAME which messed up CPAN indexer
 0.04 2011-02-23
   - Updated Documentation
   - Added dump tests
