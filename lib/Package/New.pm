@@ -2,7 +2,7 @@ package Package::New;
 use strict;
 use warnings;
 
-our $VERSION='0.05';
+our $VERSION='0.07';
 
 =head1 NAME
 
@@ -13,11 +13,17 @@ Package::New - Simple base package from which to inherit
   package My::Package;
   use base qw{Package::New}; #provides new and initialize
 
+=head1 DESCRIPTION
+
+The Package::New object provides a consistent constructor for objects.
+
+I find that I always need these two methods in every package that I build.  I plan to use this package as the base for all of my CPAN packages. 
+
 =head1 RECOMMENDATIONS
 
 =head2 Sane defaults
 
-I recommend that you have sane default for all of your objects properties.  I recommend using code like this.
+I recommend that you have sane default for all of your object properties.  I recommend using code like this.
 
   sub myproperty {
     my $self=shift;
@@ -31,7 +37,7 @@ I recommend that you have sane default for all of your objects properties.  I re
 I recommend to always use strict, warnings and our version.
 
   package My::Package;
-  use base qw{Package::New}; #provides new and initialize
+  use base qw{Package::New};
   use strict;
   use warnings;
   our $VERSION='0.01';
@@ -45,10 +51,6 @@ I recommend Lazy Loading where you can.
     $self->load unless $self->loaded;
     return $self->{"mymethod"};
   }
-
-=head1 DESCRIPTION
-
-The Package::New object provides a consistent constructor for objects.
 
 =head1 USAGE
 
@@ -111,11 +113,15 @@ L<base>, L<parent>
 
 =head2 Other Light Weight Base Objects Similar to Package::New
 
-L<Package::Base>, L<Class::Base>
+L<Package::Base>, L<Class::Base>, L<Class::Easy>, L<Object::Tiny>
 
 =head2 Heavy Base Objects - Drink the Kool-Aid
 
-L<Moose>, L<Class::Accessor>, L<Class::MethodMaker>, L<Class::MethodMaker>, L<Class::Meta>
+L<Moose>, (as well as Moose-alikes L<Moo>, L<Mouse>), L<Class::Accessor>, L<Class::Accessor::Fast>, L<Class::MethodMaker>, L<Class::Meta>
+
+=head2 Even more
+
+L<Spiffy>, L<mixin>, L<SUPER>, L<Class::Trait>, L<Class::C3>, L<Moose::Role>
 
 =cut
 

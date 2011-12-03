@@ -1,5 +1,7 @@
 # -*- perl -*-
 
+use strict;
+use warnings;
 use Test::More tests => 6;
 
 BEGIN { use_ok( 'Package::New' ); }
@@ -17,3 +19,4 @@ My::Package;
 use base qw{Package::New};
 sub x {shift->{"x"}};
 sub y {shift->{"y"}};
+1;

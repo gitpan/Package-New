@@ -3,7 +3,7 @@ use base qw{Package::New};
 use strict;
 use warnings;
 
-our $VERSION='0.05';
+our $VERSION='0.06';
 
 =head1 NAME
 
@@ -14,13 +14,13 @@ Package::New::Dump - Simple base package from which to inherit
   package My::Package;
   use base qw{Package::New::Dump}; #provides new, initialize and dump
 
-=head1 RECOMMENDATIONS
-
-I recommend using this package only during development and reverting back to L<Package::New> when in full production
-
 =head1 DESCRIPTION
 
 The Package::New::Dump object provides a consistent object constructor for objects.
+
+=head1 RECOMMENDATIONS
+
+I recommend using this package only during development and reverting back to L<Package::New> when in full production
 
 =head1 USAGE
 
